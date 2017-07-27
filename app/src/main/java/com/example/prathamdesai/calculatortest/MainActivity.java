@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private static final char divide = '/';
 
     private char operation;
-    DecimalFormat format = new DecimalFormat("0.000");
+    DecimalFormat format = new DecimalFormat("0.0000");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
