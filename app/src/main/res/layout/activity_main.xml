@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
-    <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:background="@android:color/holo_blue_dark"
         tools:context="com.example.prathamdesai.calculatortest.MainActivity">
 
@@ -19,6 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textView"
+            android:background="@android:color/white"
             android:enabled="false"
             android:gravity="bottom"
             android:lines="2"
@@ -112,6 +113,7 @@
             android:text="3"
             android:textAlignment="center"
             android:textSize="20sp" />
+
         <Button
             android:id="@+id/buttonZero"
             style="@style/Widget.AppCompat.Button.Borderless"
@@ -121,6 +123,7 @@
             android:text="0"
             android:textAlignment="center"
             android:textSize="20sp" />
+
         <Button
             android:id="@+id/buttonCE"
             style="@style/Widget.AppCompat.Button.Borderless"
@@ -131,24 +134,61 @@
             android:text="CE"
             android:textAlignment="center"
             android:textSize="20sp" />
+
         <Button
             android:id="@+id/buttonEquals"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/buttonThree"
+            android:layout_below="@+id/buttonThree"
             android:layout_toRightOf="@+id/buttonCE"
             android:text="="
             android:textAlignment="center"
             android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonDivide"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText"
+            android:layout_toRightOf="@+id/buttonNine"
+            android:text='/'
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonMultiply"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonDivide"
+            android:layout_toRightOf="@+id/buttonSix"
+            android:text="*"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonSubtract"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonMultiply"
+            android:layout_toRightOf="@+id/buttonThree"
+            android:text="-"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
         <Button
             android:id="@+id/buttonPlus"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/buttonOne"
+            android:layout_below="@+id/buttonSubtract"
+            android:layout_toRightOf="@+id/buttonEquals"
             android:text="+"
             android:textAlignment="center"
             android:textSize="20sp" />
+
     </RelativeLayout>
 </layout>
