@@ -164,7 +164,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/buttonDivide"
             android:layout_toRightOf="@+id/buttonSix"
-            android:text="\\*"
+            android:text="*"
             android:textAlignment="center"
             android:textSize="20sp" />
 
