@@ -4,6 +4,7 @@ import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.util.Log;
 
 
 import java.text.DecimalFormat;
@@ -22,12 +23,21 @@ public class MainActivity extends AppCompatActivity {
     private static final char divide = '/';
 
     private char operation;
+
     DecimalFormat format = new DecimalFormat("0.0000");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+
+        clickClick();
+
+
+
+    }
+
+    private void clickClick() {
 
         binding.buttonZero.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -113,8 +123,8 @@ public class MainActivity extends AppCompatActivity {
         binding.buttonPlus.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                    computeOperation();
-                    operation = add;
+                computeOperation();
+                operation = add;
 
                 binding.textView.setText(format.format(num1) + "+");
                 binding.editText.setText("+");
@@ -125,8 +135,8 @@ public class MainActivity extends AppCompatActivity {
         binding.buttonSubtract.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                    computeOperation();
-                    operation = subtract;
+                computeOperation();
+                operation = subtract;
 
                 binding.textView.setText(format.format(num1) + "-");
                 binding.editText.setText("-");
@@ -137,8 +147,8 @@ public class MainActivity extends AppCompatActivity {
         binding.buttonMultiply.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                    computeOperation();
-                    operation = multiply;
+                computeOperation();
+                operation = multiply;
 
                 binding.textView.setText(format.format(num1) + "*");
                 binding.editText.setText("*");
@@ -149,11 +159,11 @@ public class MainActivity extends AppCompatActivity {
         binding.buttonDivide.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                    computeOperation();
-                    operation = divide;
+                computeOperation();
+                operation = divide;
 
-                    binding.textView.setText(format.format(num1) + "/");
-                    binding.editText.setText("/");
+                binding.textView.setText(format.format(num1) + "/");
+                binding.editText.setText("/");
 
             }
         });
@@ -171,13 +181,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
     }
 
     private void computeOperation(){
 
         if(!Double.isNaN(num1)){
-            num2 = Double.parseDouble(binding.editText.getText().toString());
+            String first = binding.editText.getText().toString().substring(0, 1);
+            num2 = Double.parseDouble(binding.editText.getText().toString().replace(first, ""));
             binding.editText.setText(null);
 
             if(operation == add){
