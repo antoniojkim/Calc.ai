@@ -10,6 +10,7 @@
         android:background="@android:color/holo_blue_dark"
         tools:context="com.example.prathamdesai.calculatortest.MainActivity">
 
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
@@ -26,7 +27,6 @@
                 android:lines="2"
                 android:maxLines="2"
                 android:textSize="20sp" />
-
             <Button
                 android:id="@+id/buttonSeven"
                 style="@style/Widget.AppCompat.Button.Borderless"
@@ -34,7 +34,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/editText"
                 android:text="7"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:onClick="clickClick"/>
+
+
 
             <Button
                 android:id="@+id/buttonEight"
