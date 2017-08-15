@@ -1,4 +1,4 @@
-package com.example.prathamdesai.calculatortest;
+package com.example.antoniok.CalcAI;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

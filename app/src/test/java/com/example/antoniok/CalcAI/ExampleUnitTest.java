@@ -1,4 +1,4 @@
-package com.example.prathamdesai.calculatortest;
+package com.example.antoniok.CalcAI;
 
 import org.junit.Test;
 
