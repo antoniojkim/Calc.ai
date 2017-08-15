@@ -1,6 +1,77 @@
 <resources>
-    <string name="app_name">CalculatorTest</string>
+    <string name="app_name">CalcAI</string>
+    <string name="divideSymbol">/</string>
+    <string name="multiplySymbol">×</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--Calculator Button Numerical Parameters-->
+    <string name="buttonWidth">70dp</string>
+    <string name="buttonHeight">64.75dp</string>
+    <string name="buttonFontSize">17.5sp</string>
+
+    <!--Calculator Button Strings-->
+    <string name="topLeftButtonText">           x  </string>
+    <string name="topLeftDownOneButtonText">    π   </string>
+    <string name="topLeftDownTwoButtonText">    e   </string>
+    <string name="topLeftDownThreeButtonText">  !   </string>
+    <string name="topLeftDownFourButtonText">   nCr </string>
+    <string name="bottomLeftButtonText">        nPr </string>
+
+    <string name="topLeftRightOneButtonText">           [   </string>
+    <string name="topLeftDownOneRightOneButtonText">    (   </string>
+    <string name="topLeftDownTwoRightOneButtonText">    7   </string>
+    <string name="topLeftDownThreeRightOneButtonText">  4   </string>
+    <string name="topLeftDownFourRightOneButtonText">   1   </string>
+    <string name="bottomLeftRightOneButtonText">        .   </string>
+
+    <string name="topLeftRightTwoButtonText">           ]   </string>
+    <string name="topLeftDownOneRightTwoButtonText">    )   </string>
+    <string name="topLeftDownTwoRightTwoButtonText">    8   </string>
+    <string name="topLeftDownThreeRightTwoButtonText">  5   </string>
+    <string name="topLeftDownFourRightTwoButtonText">   2   </string>
+    <string name="bottomLeftRightTwoButtonText">        0   </string>
+
+    <string name="topLeftRightThreeButtonText">             √   </string>
+    <string name="topLeftDownOneRightThreeButtonText">      ^   </string>
+    <string name="topLeftDownTwoRightThreeButtonText">      9   </string>
+    <string name="topLeftDownThreeRightThreeButtonText">    6   </string>
+    <string name="topLeftDownFourRightThreeButtonText">     3   </string>
+    <string name="bottomLeftRightThreeButtonText">          ,   </string>
+
+    <string name="topRightButtonText">           ←   </string>
+    <string name="topRightDownOneButtonText">    /   </string>
+    <string name="topRightDownTwoButtonText">    ×   </string>
+    <string name="topRightDownThreeButtonText">  +   </string>
+    <string name="topRightDownFourButtonText">   -   </string>
+    <string name="bottomRightButtonText">        %   </string>
+
+    <!--Calculator Button Strings 2-->
+    <!--<string name="topLeftButtonText">           2ⁿᵈ  </string>-->
+    <!--<string name="topLeftDownOneButtonText">    7   </string>-->
+    <!--<string name="topLeftDownTwoButtonText">    4   </string>-->
+    <!--<string name="topLeftDownThreeButtonText">  1   </string>-->
+    <!--<string name="bottomLeftButtonText">        .   </string>-->
+
+    <!--<string name="topLeftRightOneButtonText">           π   </string>-->
+    <!--<string name="topLeftDownOneRightOneButtonText">    8   </string>-->
+    <!--<string name="topLeftDownTwoRightOneButtonText">    5   </string>-->
+    <!--<string name="topLeftDownThreeRightOneButtonText">  2   </string>-->
+    <!--<string name="bottomLeftRightOneButtonText">        0   </string>-->
+
+    <!--<string name="topLeftRightTwoButtonText">           e   </string>-->
+    <!--<string name="topLeftDownOneRightTwoButtonText">    9   </string>-->
+    <!--<string name="topLeftDownTwoRightTwoButtonText">    6   </string>-->
+    <!--<string name="topLeftDownThreeRightTwoButtonText">  3   </string>-->
+    <!--<string name="bottomLeftRightTwoButtonText">        √   </string>-->
+
+    <!--<string name="topLeftRightThreeButtonText">             ^   </string>-->
+    <!--<string name="topLeftDownOneRightThreeButtonText">      ×   </string>-->
+    <!--<string name="topLeftDownTwoRightThreeButtonText">      +   </string>-->
+    <!--<string name="topLeftDownThreeRightThreeButtonText">    (   </string>-->
+    <!--<string name="bottomLeftRightThreeButtonText">          [   </string>-->
+
+    <!--<string name="topRightButtonText">          ←   </string>-->
+    <!--<string name="topRightDownOneButtonText">   /   </string>-->
+    <!--<string name="topRightDownTwoButtonText">   -   </string>-->
+    <!--<string name="topRightDownThreeButtonText"> )   </string>-->
+    <!--<string name="bottomRightButtonText">       ]   </string>-->
 </resources>
