@@ -26,7 +26,8 @@
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp" />
+            android:layout_marginRight="8dp"
+            />
 
         <TextView
             android:id="@+id/outputText"
@@ -45,7 +46,8 @@
             android:layout_marginStart="30dp"
             android:layout_marginLeft="30dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"  />
+            android:layout_marginRight="8dp"
+            />
 
         <View
             android:id="@+id/divider"
@@ -58,7 +60,8 @@
             android:layout_marginRight="5dp"/>
 
         <include layout="@layout/keypad"
-            android:id="@+id/keypad"/>
+            android:id="@+id/keypad"
+            />
 
     </LinearLayout>
 </layout>

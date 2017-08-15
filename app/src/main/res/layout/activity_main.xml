@@ -9,10 +9,13 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.kim.antonio.calc_ai.MainActivity">
+        tools:context="com.kim.antonio.calc_ai.MainActivity"
+        android:background="@color/niceBlue"
+        >
 
         <include layout="@layout/calculator"
-            android:id="@+id/calculator"/>
+            android:id="@+id/calculator"
+            />
 
     </android.support.constraint.ConstraintLayout>
 </layout>
