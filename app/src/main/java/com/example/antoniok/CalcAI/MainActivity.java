@@ -12,7 +12,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.util.Log;
 import android.widget.Toast;
-import java.text.DecimalFormat;
 
 import com.example.antoniok.CalcAI.databinding.ActivityMainBinding;
 
@@ -22,23 +21,13 @@ public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
 
-    private double num1 = Double.NaN;
-    private double num2;
-
     private int activityNum;
-    private static final char add = '+';
-    private static final char subtract = '-';
-    private static final char multiply = '*';
-    private static final char divide = '/';
 
-    private char operation;
     private GestureDetectorCompat detector;
     private MyGestureHandler handler;
     private LayoutInflater inflater;
 
     public static final String PUBLIC_KEY = "com.example.prathamdesai.calculatortest.MESSAGE";
-
-    DecimalFormat format = new DecimalFormat("0.000000");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,130 +68,39 @@ public class MainActivity extends AppCompatActivity {
 */
     protected void initiateButtonPressed(){
 
-        binding.calculator.keypad.topLeftButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topLeftButton.getText().toString());      }
-        });
-        binding.calculator.keypad.topLeftDownOneButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topLeftDownOneButton.getText().toString());      }
-        });
-        binding.calculator.keypad.topLeftDownTwoButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topLeftDownTwoButton.getText().toString());      }
-        });
-        binding.calculator.keypad.topLeftDownThreeButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topLeftDownThreeButton.getText().toString());      }
-        });
-        binding.calculator.keypad.topLeftDownFourButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topLeftDownFourButton.getText().toString());      }
-        });
-        binding.calculator.keypad.bottomLeftButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.bottomLeftButton.getText().toString());      }
-        });
+        binding.calculator.keypad.topLeftButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftButton.getText().toString()));
+        binding.calculator.keypad.topLeftDownOneButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownOneButton.getText().toString()));
+        binding.calculator.keypad.topLeftDownTwoButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownTwoButton.getText().toString()));
+        binding.calculator.keypad.topLeftDownThreeButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownThreeButton.getText().toString()));
+        binding.calculator.keypad.topLeftDownFourButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownFourButton.getText().toString()));
+        binding.calculator.keypad.bottomLeftButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.bottomLeftButton.getText().toString()));
 
-        binding.calculator.keypad.topLeftRightOneButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topLeftRightOneButton.getText().toString());      }
-        });
-        binding.calculator.keypad.topLeftDownOneRightOneButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topLeftDownOneRightOneButton.getText().toString());      }
-        });
-        binding.calculator.keypad.topLeftDownTwoRightOneButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topLeftDownTwoRightOneButton.getText().toString());      }
-        });
-        binding.calculator.keypad.topLeftDownThreeRightOneButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topLeftDownThreeRightOneButton.getText().toString());      }
-        });
-        binding.calculator.keypad.topLeftDownFourRightOneButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topLeftDownFourRightOneButton.getText().toString());      }
-        });
-        binding.calculator.keypad.bottomLeftRightOneButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.bottomLeftRightOneButton.getText().toString());      }
-        });
+        binding.calculator.keypad.topLeftRightOneButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftRightOneButton.getText().toString()));
+        binding.calculator.keypad.topLeftDownOneRightOneButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownOneRightOneButton.getText().toString()));
+        binding.calculator.keypad.topLeftDownTwoRightOneButton.setOnClickListener(v ->buttonPressed(binding.calculator.keypad.topLeftDownTwoRightOneButton.getText().toString()));
+        binding.calculator.keypad.topLeftDownThreeRightOneButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownThreeRightOneButton.getText().toString()));
+        binding.calculator.keypad.topLeftDownFourRightOneButton.setOnClickListener(v ->buttonPressed(binding.calculator.keypad.topLeftDownFourRightOneButton.getText().toString()));
+        binding.calculator.keypad.bottomLeftRightOneButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.bottomLeftRightOneButton.getText().toString()));
 
-        binding.calculator.keypad.topLeftRightTwoButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topLeftRightTwoButton.getText().toString());      }
-        });
-        binding.calculator.keypad.topLeftDownOneRightTwoButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topLeftDownOneRightTwoButton.getText().toString());      }
-        });
-        binding.calculator.keypad.topLeftDownTwoRightTwoButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topLeftDownTwoRightTwoButton.getText().toString());      }
-        });
-        binding.calculator.keypad.topLeftDownThreeRightTwoButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topLeftDownThreeRightTwoButton.getText().toString());      }
-        });
-        binding.calculator.keypad.topLeftDownFourRightTwoButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topLeftDownFourRightTwoButton.getText().toString());      }
-        });
-        binding.calculator.keypad.bottomLeftRightTwoButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.bottomLeftRightTwoButton.getText().toString());      }
-        });
+        binding.calculator.keypad.topLeftRightTwoButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftRightTwoButton.getText().toString()));
+        binding.calculator.keypad.topLeftDownOneRightTwoButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownOneRightTwoButton.getText().toString()));
+        binding.calculator.keypad.topLeftDownTwoRightTwoButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownTwoRightTwoButton.getText().toString()));
+        binding.calculator.keypad.topLeftDownThreeRightTwoButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownThreeRightTwoButton.getText().toString()));
+        binding.calculator.keypad.topLeftDownFourRightTwoButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownFourRightTwoButton.getText().toString()));
+        binding.calculator.keypad.bottomLeftRightTwoButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.bottomLeftRightTwoButton.getText().toString()));
 
-        binding.calculator.keypad.topLeftRightThreeButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topLeftRightThreeButton.getText().toString());      }
-        });
-        binding.calculator.keypad.topLeftDownOneRightThreeButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topLeftDownOneRightThreeButton.getText().toString());      }
-        });
-        binding.calculator.keypad.topLeftDownTwoRightThreeButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topLeftDownTwoRightThreeButton.getText().toString());      }
-        });
-        binding.calculator.keypad.topLeftDownThreeRightThreeButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topLeftDownThreeRightThreeButton.getText().toString());      }
-        });
-        binding.calculator.keypad.topLeftDownFourRightThreeButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topLeftDownFourRightThreeButton.getText().toString());      }
-        });
-        binding.calculator.keypad.bottomLeftRightThreeButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.bottomLeftRightThreeButton.getText().toString());      }
-        });
-
-        binding.calculator.keypad.topRightButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topRightButton.getText().toString());      }
-        });
-        binding.calculator.keypad.topRightDownOneButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topRightDownOneButton.getText().toString());      }
-        });
-        binding.calculator.keypad.topRightDownTwoButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topRightDownTwoButton.getText().toString());      }
-        });
-        binding.calculator.keypad.topRightDownThreeButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topRightDownThreeButton.getText().toString());      }
-        });
-        binding.calculator.keypad.topRightDownFourButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.topRightDownFourButton.getText().toString());      }
-        });
-        binding.calculator.keypad.bottomRightButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){ buttonPressed(binding.calculator.keypad.bottomRightButton.getText().toString());      }
-        });
+        binding.calculator.keypad.topLeftRightThreeButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftRightThreeButton.getText().toString()));
+        binding.calculator.keypad.topLeftDownOneRightThreeButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownOneRightThreeButton.getText().toString()));
+        binding.calculator.keypad.topLeftDownTwoRightThreeButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownTwoRightThreeButton.getText().toString()));
+        binding.calculator.keypad.topLeftDownThreeRightThreeButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownThreeRightThreeButton.getText().toString()));
+        binding.calculator.keypad.topLeftDownFourRightThreeButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownFourRightThreeButton.getText().toString()));
+        binding.calculator.keypad.bottomLeftRightThreeButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.bottomLeftRightThreeButton.getText().toString()));
+        binding.calculator.keypad.topRightButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topRightButton.getText().toString()));
+        binding.calculator.keypad.topRightDownOneButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topRightDownOneButton.getText().toString()));
+        binding.calculator.keypad.topRightDownTwoButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topRightDownTwoButton.getText().toString()));
+        binding.calculator.keypad.topRightDownThreeButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topRightDownThreeButton.getText().toString()));
+        binding.calculator.keypad.topRightDownFourButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topRightDownFourButton.getText().toString()));
+        binding.calculator.keypad.bottomRightButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.bottomRightButton.getText().toString()));
     }
 
     protected void buttonPressed(String text){
