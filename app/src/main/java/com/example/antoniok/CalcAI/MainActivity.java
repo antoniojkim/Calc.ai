@@ -3,14 +3,17 @@ package com.example.antoniok.CalcAI;
 import android.content.Context;
 import android.databinding.DataBindingUtil;
 import android.graphics.Color;
+import android.os.Bundle;
 import android.support.v4.view.GestureDetectorCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
-import android.view.View;
-import android.util.Log;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.antoniok.CalcAI.databinding.ActivityMainBinding;
@@ -44,6 +47,31 @@ public class MainActivity extends AppCompatActivity {
 
         detector = new GestureDetectorCompat(this, handler);
 
+        binding.calculator.inputText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                String inputText = binding.calculator.inputText.getText().toString();
+                if (inputText.length() > 0) {
+                    String output = Engine.evaluateDF(inputText);
+                    if (output.equals("= NaN")) {
+                        binding.calculator.outputText.setTextColor(Color.LTGRAY);
+                    } else {
+                        binding.calculator.outputText.setText(output);
+                        binding.calculator.outputText.setTextColor(Color.BLACK);
+                    }
+                }
+                else{
+                    binding.calculator.outputText.setText("");
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {}
+        });
+
         initiateButtonPressed();
 
     }
@@ -68,39 +96,48 @@ public class MainActivity extends AppCompatActivity {
 */
     protected void initiateButtonPressed(){
 
-        binding.calculator.keypad.topLeftButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftButton.getText().toString()));
-        binding.calculator.keypad.topLeftDownOneButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownOneButton.getText().toString()));
-        binding.calculator.keypad.topLeftDownTwoButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownTwoButton.getText().toString()));
-        binding.calculator.keypad.topLeftDownThreeButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownThreeButton.getText().toString()));
-        binding.calculator.keypad.topLeftDownFourButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownFourButton.getText().toString()));
-        binding.calculator.keypad.bottomLeftButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.bottomLeftButton.getText().toString()));
+        Button[] buttons = {
+                binding.calculator.keypad.topLeftButton,
+                binding.calculator.keypad.topLeftDownOneButton,
+                binding.calculator.keypad.topLeftDownTwoButton,
+                binding.calculator.keypad.topLeftDownThreeButton,
+                binding.calculator.keypad.topLeftDownFourButton,
+                binding.calculator.keypad.bottomLeftButton,
 
-        binding.calculator.keypad.topLeftRightOneButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftRightOneButton.getText().toString()));
-        binding.calculator.keypad.topLeftDownOneRightOneButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownOneRightOneButton.getText().toString()));
-        binding.calculator.keypad.topLeftDownTwoRightOneButton.setOnClickListener(v ->buttonPressed(binding.calculator.keypad.topLeftDownTwoRightOneButton.getText().toString()));
-        binding.calculator.keypad.topLeftDownThreeRightOneButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownThreeRightOneButton.getText().toString()));
-        binding.calculator.keypad.topLeftDownFourRightOneButton.setOnClickListener(v ->buttonPressed(binding.calculator.keypad.topLeftDownFourRightOneButton.getText().toString()));
-        binding.calculator.keypad.bottomLeftRightOneButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.bottomLeftRightOneButton.getText().toString()));
+                binding.calculator.keypad.topLeftRightOneButton,
+                binding.calculator.keypad.topLeftDownOneRightOneButton,
+                binding.calculator.keypad.topLeftDownTwoRightOneButton,
+                binding.calculator.keypad.topLeftDownThreeRightOneButton,
+                binding.calculator.keypad.topLeftDownFourRightOneButton,
+                binding.calculator.keypad.bottomLeftRightOneButton,
 
-        binding.calculator.keypad.topLeftRightTwoButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftRightTwoButton.getText().toString()));
-        binding.calculator.keypad.topLeftDownOneRightTwoButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownOneRightTwoButton.getText().toString()));
-        binding.calculator.keypad.topLeftDownTwoRightTwoButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownTwoRightTwoButton.getText().toString()));
-        binding.calculator.keypad.topLeftDownThreeRightTwoButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownThreeRightTwoButton.getText().toString()));
-        binding.calculator.keypad.topLeftDownFourRightTwoButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownFourRightTwoButton.getText().toString()));
-        binding.calculator.keypad.bottomLeftRightTwoButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.bottomLeftRightTwoButton.getText().toString()));
+                binding.calculator.keypad.topLeftRightTwoButton,
+                binding.calculator.keypad.topLeftDownOneRightTwoButton,
+                binding.calculator.keypad.topLeftDownTwoRightTwoButton,
+                binding.calculator.keypad.topLeftDownThreeRightTwoButton,
+                binding.calculator.keypad.topLeftDownFourRightTwoButton,
+                binding.calculator.keypad.bottomLeftRightTwoButton,
 
-        binding.calculator.keypad.topLeftRightThreeButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftRightThreeButton.getText().toString()));
-        binding.calculator.keypad.topLeftDownOneRightThreeButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownOneRightThreeButton.getText().toString()));
-        binding.calculator.keypad.topLeftDownTwoRightThreeButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownTwoRightThreeButton.getText().toString()));
-        binding.calculator.keypad.topLeftDownThreeRightThreeButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownThreeRightThreeButton.getText().toString()));
-        binding.calculator.keypad.topLeftDownFourRightThreeButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topLeftDownFourRightThreeButton.getText().toString()));
-        binding.calculator.keypad.bottomLeftRightThreeButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.bottomLeftRightThreeButton.getText().toString()));
-        binding.calculator.keypad.topRightButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topRightButton.getText().toString()));
-        binding.calculator.keypad.topRightDownOneButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topRightDownOneButton.getText().toString()));
-        binding.calculator.keypad.topRightDownTwoButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topRightDownTwoButton.getText().toString()));
-        binding.calculator.keypad.topRightDownThreeButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topRightDownThreeButton.getText().toString()));
-        binding.calculator.keypad.topRightDownFourButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.topRightDownFourButton.getText().toString()));
-        binding.calculator.keypad.bottomRightButton.setOnClickListener(v -> buttonPressed(binding.calculator.keypad.bottomRightButton.getText().toString()));
+                binding.calculator.keypad.topLeftRightThreeButton,
+                binding.calculator.keypad.topLeftDownOneRightThreeButton,
+                binding.calculator.keypad.topLeftDownTwoRightThreeButton,
+                binding.calculator.keypad.topLeftDownThreeRightThreeButton,
+                binding.calculator.keypad.topLeftDownFourRightThreeButton,
+                binding.calculator.keypad.bottomLeftRightThreeButton,
+
+                binding.calculator.keypad.topRightButton,
+                binding.calculator.keypad.topRightDownOneButton,
+                binding.calculator.keypad.topRightDownTwoButton,
+                binding.calculator.keypad.topRightDownThreeButton,
+                binding.calculator.keypad.topRightDownFourButton,
+                binding.calculator.keypad.bottomRightButton
+        };
+
+        for (Button button : buttons){
+            button.setOnClickListener(v -> buttonPressed(button.getText().toString()));
+            button.setOnLongClickListener(v -> buttonLongPressed(button.getText().toString()));
+        }
+
     }
 
     protected void buttonPressed(String text){
@@ -111,21 +148,36 @@ public class MainActivity extends AppCompatActivity {
             default:       addToInput(text);  break;
         }
     }
+    protected boolean buttonLongPressed(String text){
+        switch(text){
+            case "←":
+                binding.calculator.inputText.setText("");
+                binding.calculator.outputText.setText("");
+                break;
+            default:       addToInput(text);  break;
+        }
+        return true;
+    }
+
+    public static final String equalsNaN = "= NaN";
+    public static final int equalsNaNColor = Color.LTGRAY;
+    public static final int validColor = Color.BLACK;
 
     protected void addToInput(String text){
         int caret = binding.calculator.inputText.getSelectionEnd();
         String oldInputText = binding.calculator.inputText.getText().toString();
         String newInputText = oldInputText.substring(0, caret)+text+oldInputText.substring(caret);
+
         if (newInputText.length() > 0) {
             binding.calculator.inputText.setText(newInputText);
             binding.calculator.inputText.setSelection(caret + text.length());
 
             String output = Engine.evaluateDF(newInputText);
-            if (output.equals("= NaN")) {
-                binding.calculator.outputText.setTextColor(Color.LTGRAY);
+            if (output.equals(equalsNaN)) {
+                binding.calculator.outputText.setTextColor(equalsNaNColor);
             } else {
                 binding.calculator.outputText.setText(output);
-                binding.calculator.outputText.setTextColor(Color.BLACK);
+                binding.calculator.outputText.setTextColor(validColor);
             }
         }
     }
@@ -140,6 +192,27 @@ public class MainActivity extends AppCompatActivity {
 
             if (newInputText.length() > 0) {
                 String output = Engine.evaluateDF(newInputText);
+                if (output.equals(equalsNaN)) {
+                    binding.calculator.outputText.setTextColor(equalsNaNColor);
+                } else {
+                    binding.calculator.outputText.setText(output);
+                    binding.calculator.outputText.setTextColor(validColor);
+                }
+            }
+            else{
+                binding.calculator.outputText.setText("");
+            }
+        }
+    }
+
+    private String previous = "";
+    protected void updatedOutput(EditText input){
+        String inputText = input.getText().toString();
+        if (inputText.length() > 0) {
+            if (!inputText.equals("previous")) {
+                int caret = input.getSelectionEnd();
+
+                String output = Engine.evaluateDF(inputText);
                 if (output.equals("= NaN")) {
                     binding.calculator.outputText.setTextColor(Color.LTGRAY);
                 } else {
@@ -147,9 +220,9 @@ public class MainActivity extends AppCompatActivity {
                     binding.calculator.outputText.setTextColor(Color.BLACK);
                 }
             }
-            else{
-                binding.calculator.outputText.setText("");
-            }
+        }
+        else{
+            binding.calculator.outputText.setText("");
         }
     }
 
