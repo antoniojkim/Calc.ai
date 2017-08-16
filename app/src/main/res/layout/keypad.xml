@@ -5,8 +5,8 @@
             name="Keypad"
             type="com.example.antoniok.CalcAI.MainActivity"/>
     </data>
+
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         tools:context="com.kim.antonio.calc_ai.MainActivity"
         android:orientation="vertical"
@@ -38,7 +38,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topLeftButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -51,7 +51,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topLeftRightOneButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -64,7 +64,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topLeftRightTwoButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -77,7 +77,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topLeftRightThreeButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -90,7 +90,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topRightButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -120,7 +120,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topLeftDownOneButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -133,7 +133,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topLeftDownOneRightOneButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -146,7 +146,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topLeftDownOneRightTwoButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -159,7 +159,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topLeftDownOneRightThreeButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -172,7 +172,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topRightDownOneButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -202,7 +202,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topLeftDownTwoButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -215,7 +215,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topLeftDownTwoRightOneButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -228,7 +228,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topLeftDownTwoRightTwoButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -241,7 +241,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topLeftDownTwoRightThreeButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -254,7 +254,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topRightDownTwoButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -284,7 +284,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topLeftDownThreeButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -297,7 +297,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topLeftDownThreeRightOneButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -310,7 +310,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topLeftDownThreeRightTwoButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -323,7 +323,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topLeftDownThreeRightThreeButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -336,7 +336,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topRightDownThreeButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -366,7 +366,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topLeftDownFourButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -379,7 +379,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topLeftDownFourRightOneButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -392,7 +392,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topLeftDownFourRightTwoButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -405,7 +405,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topLeftDownFourRightThreeButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -418,7 +418,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/topRightDownFourButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -448,7 +448,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/bottomLeftButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -461,7 +461,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/bottomLeftRightOneButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -474,7 +474,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/bottomLeftRightTwoButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -487,7 +487,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/bottomLeftRightThreeButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
@@ -500,7 +500,7 @@
                     android:background="@android:color/transparent"
                     android:text="@string/bottomRightButtonText"
                     android:textAllCaps="false"
-                    android:textSize="22.5sp" />
+                    android:textSize="25sp" />
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dip"
