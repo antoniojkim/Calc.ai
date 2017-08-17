@@ -1,6 +1,7 @@
 package com.example.antoniok.CalcAI;
 
 import android.content.Context;
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -24,11 +25,15 @@ public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
 
+    private Button[] buttons;
+
     private int activityNum;
 
     private GestureDetectorCompat detector;
     private MyGestureHandler handler;
     private LayoutInflater inflater;
+
+    private Intent intent;
 
     public static final String PUBLIC_KEY = "com.example.prathamdesai.calculatortest.MESSAGE";
 
@@ -47,56 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
         detector = new GestureDetectorCompat(this, handler);
 
-        binding.calculator.inputText.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                String inputText = binding.calculator.inputText.getText().toString();
-                if (inputText.length() > 0) {
-                    String output = Engine.evaluateDF(inputText);
-                    if (output.equals("= NaN")) {
-                        binding.calculator.outputText.setTextColor(Color.LTGRAY);
-                    } else {
-                        binding.calculator.outputText.setText(output);
-                        binding.calculator.outputText.setTextColor(Color.BLACK);
-                    }
-                }
-                else{
-                    binding.calculator.outputText.setText("");
-                }
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {}
-        });
-
-        initiateButtonPressed();
-
-    }
-    /*
-    public void startAnActivity(){
-
-        int num = getActivityNum();
-        Intent intent;
-
-        if (num == 1)
-            intent = new Intent(this, INSERTCLASSHERE);
-        else if(num == 2)
-            intent = new Intent(this, INSERTCLASSHERE);
-        else if(num == 3)
-            intent = new Intent(this, INSERTCLASSHERE);
-        else
-            intent = null;
-
-        startActivity(intent);
-
-    }
-*/
-    protected void initiateButtonPressed(){
-
-        Button[] buttons = {
+        buttons = new Button[]{
                 binding.calculator.keypad.topLeftButton,
                 binding.calculator.keypad.topLeftDownOneButton,
                 binding.calculator.keypad.topLeftDownTwoButton,
@@ -132,6 +88,51 @@ public class MainActivity extends AppCompatActivity {
                 binding.calculator.keypad.topRightDownFourButton,
                 binding.calculator.keypad.bottomRightButton
         };
+
+        binding.calculator.inputText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                String inputText = binding.calculator.inputText.getText().toString();
+                if (inputText.length() > 0) {
+                    String output = Engine.evaluateDF(inputText);
+                    if (output.equals("= NaN")) {
+                        binding.calculator.outputText.setTextColor(Color.LTGRAY);
+                    } else {
+                        binding.calculator.outputText.setText(output);
+                        binding.calculator.outputText.setTextColor(Color.BLACK);
+                    }
+                }
+                else{
+                    binding.calculator.outputText.setText("");
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {}
+        });
+
+        initiateButtonPressed(buttons);
+
+    }
+
+    public void startAnActivity(){
+
+        int num = getActivityNum();
+        Intent intent;
+
+        if (num == 1)
+            intent = new Intent(this, DerivLimPage.class);
+        else
+            intent = null;
+
+        startActivity(intent);
+
+    }
+
+    protected void initiateButtonPressed(Button[] buttons){
 
         for (Button button : buttons){
             button.setOnClickListener(v -> buttonPressed(button.getText().toString()));
@@ -263,9 +264,11 @@ public class MainActivity extends AppCompatActivity {
 
             Log.d(tag, "Fling" + "[" + e1.getX() + "," + e1.getY() + "]" + "[" + e2.getX() + "," + e2.getY() + "]");
 
-            Toast.makeText(context, "FLING", Toast.LENGTH_SHORT).show();
+            String swipe_message = "";
 
-            if (e1.getY() > 500 && e2.getY() <= 973) {
+            if (e1.getY() > 605 && e2.getY() <= 825) {
+
+                swipe_message = "Trigonometric";
 
                 //setActivityNum(1);
 
@@ -275,7 +278,9 @@ public class MainActivity extends AppCompatActivity {
 
                 //setContentView(page);
 
-            } else if (e1.getY() > 973 && e2.getY() <= 1446) {
+            } else if (e1.getY() > 825 && e2.getY() <= 1045) {
+
+                swipe_message = "Logarithmic";
 
                 //setActivityNum(2);
 
@@ -284,16 +289,33 @@ public class MainActivity extends AppCompatActivity {
 
                 //setContentView(page);
 
-            } else if (e1.getY() > 1446 && e2.getY() <= 1920) {
+            } else if (e1.getY() > 1045 && e2.getY() <= 1265) {
 
-                //setActivityNum(3);
+                swipe_message = "Differential";
 
-                //startAnActivity();
+                setActivityNum(1);
+
+                startAnActivity();
                 //View page = inflater.inflate(R.layout.another_another_page, null);
 
                 //setContentView(page);
 
+            }else if (e1.getY() > 1265 && e2.getY() <= 1485){
+
+                swipe_message = "Numbers";
+
+            }else if (e1.getY() > 1485 && e2.getY() <= 1705){
+
+                swipe_message = "Integration";
+
+            }else if (e1.getY() > 1705 && e2.getY() <= 1920){
+
+                swipe_message = "Main";
+
             }
+
+
+            Toast.makeText(context, "FLING" + swipe_message, Toast.LENGTH_SHORT).show();
 
             return true;
         }
