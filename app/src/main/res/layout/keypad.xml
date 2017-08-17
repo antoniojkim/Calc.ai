@@ -12,503 +12,228 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:background="@color/niceBlue">
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.05">
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topLeftButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topLeftButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topLeftRightOneButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topLeftRightOneButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topLeftRightTwoButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topLeftRightTwoButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topLeftRightThreeButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topLeftRightThreeButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topRightButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topRightButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.1">
-            </RelativeLayout>
+        <RelativeLayout style="@style/VerticalButtonLayout">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                <RelativeLayout style="@style/KeypadLeftStyle"/>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topLeftButton"
+                        android:text="@string/topLeftButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topLeftRightOneButton"
+                        android:text="@string/topLeftRightOneButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topLeftRightTwoButton"
+                        android:text="@string/topLeftRightTwoButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topLeftRightThreeButton"
+                        android:text="@string/topLeftRightThreeButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topRightButton"
+                        android:text="@string/topRightButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/KeypadRightStyle"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout style="@style/VerticalButtonLayout">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.05">
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topLeftDownOneButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topLeftDownOneButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topLeftDownOneRightOneButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topLeftDownOneRightOneButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topLeftDownOneRightTwoButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topLeftDownOneRightTwoButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topLeftDownOneRightThreeButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topLeftDownOneRightThreeButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topRightDownOneButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topRightDownOneButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.1">
-            </RelativeLayout>
+                <RelativeLayout style="@style/KeypadLeftStyle"/>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topLeftDownOneButton"
+                        android:text="@string/topLeftDownOneButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topLeftDownOneRightOneButton"
+                        android:text="@string/topLeftDownOneRightOneButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topLeftDownOneRightTwoButton"
+                        android:text="@string/topLeftDownOneRightTwoButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topLeftDownOneRightThreeButton"
+                        android:text="@string/topLeftDownOneRightThreeButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topRightDownOneButton"
+                        android:text="@string/topRightDownOneButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/KeypadRightStyle"/>
 
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout style="@style/VerticalButtonLayout">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.05">
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topLeftDownTwoButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topLeftDownTwoButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topLeftDownTwoRightOneButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topLeftDownTwoRightOneButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topLeftDownTwoRightTwoButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topLeftDownTwoRightTwoButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topLeftDownTwoRightThreeButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topLeftDownTwoRightThreeButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topRightDownTwoButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topRightDownTwoButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.1">
-            </RelativeLayout>
+                <RelativeLayout style="@style/KeypadLeftStyle"/>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topLeftDownTwoButton"
+                        android:text="@string/topLeftDownTwoButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topLeftDownTwoRightOneButton"
+                        android:text="@string/topLeftDownTwoRightOneButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topLeftDownTwoRightTwoButton"
+                        android:text="@string/topLeftDownTwoRightTwoButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topLeftDownTwoRightThreeButton"
+                        android:text="@string/topLeftDownTwoRightThreeButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topRightDownTwoButton"
+                        android:text="@string/topRightDownTwoButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/KeypadRightStyle"/>
 
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout style="@style/VerticalButtonLayout">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.05">
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topLeftDownThreeButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topLeftDownThreeButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topLeftDownThreeRightOneButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topLeftDownThreeRightOneButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topLeftDownThreeRightTwoButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topLeftDownThreeRightTwoButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topLeftDownThreeRightThreeButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topLeftDownThreeRightThreeButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topRightDownThreeButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topRightDownThreeButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.1">
-            </RelativeLayout>
+                <RelativeLayout style="@style/KeypadLeftStyle"/>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topLeftDownThreeButton"
+                        android:text="@string/topLeftDownThreeButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topLeftDownThreeRightOneButton"
+                        android:text="@string/topLeftDownThreeRightOneButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topLeftDownThreeRightTwoButton"
+                        android:text="@string/topLeftDownThreeRightTwoButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topLeftDownThreeRightThreeButton"
+                        android:text="@string/topLeftDownThreeRightThreeButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topRightDownThreeButton"
+                        android:text="@string/topRightDownThreeButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/KeypadRightStyle"/>
 
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout style="@style/VerticalButtonLayout">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.05">
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topLeftDownFourButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topLeftDownFourButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topLeftDownFourRightOneButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topLeftDownFourRightOneButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topLeftDownFourRightTwoButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topLeftDownFourRightTwoButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topLeftDownFourRightThreeButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topLeftDownFourRightThreeButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/topRightDownFourButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/topRightDownFourButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.1">
-            </RelativeLayout>
+                <RelativeLayout style="@style/KeypadLeftStyle"/>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topLeftDownFourButton"
+                        android:text="@string/topLeftDownFourButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topLeftDownFourRightOneButton"
+                        android:text="@string/topLeftDownFourRightOneButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topLeftDownFourRightTwoButton"
+                        android:text="@string/topLeftDownFourRightTwoButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topLeftDownFourRightThreeButton"
+                        android:text="@string/topLeftDownFourRightThreeButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/topRightDownFourButton"
+                        android:text="@string/topRightDownFourButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/KeypadRightStyle"/>
 
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout style="@style/VerticalButtonLayout">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.05">
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/bottomLeftButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/bottomLeftButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/bottomLeftRightOneButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/bottomLeftRightOneButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/bottomLeftRightTwoButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/bottomLeftRightTwoButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/bottomLeftRightThreeButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/bottomLeftRightThreeButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.17">
-                <Button
-                    android:id="@+id/bottomRightButton"
-                    android:layout_width="70dp"
-                    android:layout_height="64.75dp"
-                    android:background="@android:color/transparent"
-                    android:text="@string/bottomRightButtonText"
-                    android:textAllCaps="false"
-                    android:textSize="25sp" />
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.1">
-            </RelativeLayout>
+                <RelativeLayout style="@style/KeypadLeftStyle"/>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/bottomLeftButton"
+                        android:text="@string/bottomLeftButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/bottomLeftRightOneButton"
+                        android:text="@string/bottomLeftRightOneButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/bottomLeftRightTwoButton"
+                        android:text="@string/bottomLeftRightTwoButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/bottomLeftRightThreeButton"
+                        android:text="@string/bottomLeftRightThreeButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/bottomRightButton"
+                        android:text="@string/bottomRightButtonText"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/KeypadRightStyle"/>
 
-        </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
     </LinearLayout>
 
 </layout>

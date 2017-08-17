@@ -8,4 +8,33 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="VerticalButtonLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dip</item>
+        <item name="android:layout_weight">0.17</item>
+    </style>
+
+    <style name="KeypadLeftStyle">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">0.03</item>
+    </style>
+    <style name="HorizontalButtonLayout">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">0.184</item>
+    </style>
+    <style name="KeypadButtonStyle">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">27sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="KeypadRightStyle">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">0.1</item>
+    </style>
+
 </resources>
