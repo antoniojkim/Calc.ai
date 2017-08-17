@@ -5,4 +5,12 @@
     <color name="colorAccent">#FF4081</color>
     <color name="niceBlue">#78E4FF</color>
     <color name="background">#FAFAFA</color>
+    <color name="niceLightGreen">#8AFF96</color>
+    <color name="niceRegularGreen">#26D738</color>
+    <color name="niceLightYellow">#FFFF99</color>
+    <color name="niceLightBluey">#CCE5FF</color>
+    <color name="nicePeach">#FFCC99</color>
+    <color name="niceLightPink">#FFCCFF</color>
+    <color name="niceGrapePurple">#9E87BD</color>
+
 </resources>
