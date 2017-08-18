@@ -9,40 +9,40 @@
     <string name="buttonFontSize">17.5sp</string>
 
     <!--Calculator Button Strings-->
-    <string name="topLeftButtonText">           x  </string>
-    <string name="topLeftDownOneButtonText">    π   </string>
-    <string name="topLeftDownTwoButtonText">    e   </string>
-    <string name="topLeftDownThreeButtonText">  !   </string>
-    <string name="topLeftDownFourButtonText">   nCr </string>
-    <string name="bottomLeftButtonText">        nPr </string>
+    <string name="topLeftButtonText">           [   </string>
+    <string name="topLeftDownOneButtonText">    √   </string>
+    <string name="topLeftDownTwoButtonText">    π   </string>
+    <string name="topLeftDownThreeButtonText">  e   </string>
+    <!--<string name="topLeftDownFourButtonText">   nCr </string>-->
+    <string name="bottomLeftButtonText">        x   </string>
 
-    <string name="topLeftRightOneButtonText">           [   </string>
-    <string name="topLeftDownOneRightOneButtonText">    (   </string>
-    <string name="topLeftDownTwoRightOneButtonText">    7   </string>
-    <string name="topLeftDownThreeRightOneButtonText">  4   </string>
-    <string name="topLeftDownFourRightOneButtonText">   1   </string>
+    <string name="topLeftRightOneButtonText">           ]   </string>
+    <string name="topLeftDownOneRightOneButtonText">    7   </string>
+    <string name="topLeftDownTwoRightOneButtonText">    4   </string>
+    <string name="topLeftDownThreeRightOneButtonText">  1   </string>
+    <!--<string name="topLeftDownFourRightOneButtonText">   1   </string>-->
     <string name="bottomLeftRightOneButtonText">        .   </string>
 
-    <string name="topLeftRightTwoButtonText">           ]   </string>
-    <string name="topLeftDownOneRightTwoButtonText">    )   </string>
-    <string name="topLeftDownTwoRightTwoButtonText">    8   </string>
-    <string name="topLeftDownThreeRightTwoButtonText">  5   </string>
-    <string name="topLeftDownFourRightTwoButtonText">   2   </string>
+    <string name="topLeftRightTwoButtonText">           (   </string>
+    <string name="topLeftDownOneRightTwoButtonText">    8   </string>
+    <string name="topLeftDownTwoRightTwoButtonText">    5   </string>
+    <string name="topLeftDownThreeRightTwoButtonText">  2   </string>
+    <!--<string name="topLeftDownFourRightTwoButtonText">   2   </string>-->
     <string name="bottomLeftRightTwoButtonText">        0   </string>
 
-    <string name="topLeftRightThreeButtonText">             √   </string>
-    <string name="topLeftDownOneRightThreeButtonText">      ^   </string>
-    <string name="topLeftDownTwoRightThreeButtonText">      9   </string>
-    <string name="topLeftDownThreeRightThreeButtonText">    6   </string>
-    <string name="topLeftDownFourRightThreeButtonText">     3   </string>
+    <string name="topLeftRightThreeButtonText">             )   </string>
+    <string name="topLeftDownOneRightThreeButtonText">      9   </string>
+    <string name="topLeftDownTwoRightThreeButtonText">      6   </string>
+    <string name="topLeftDownThreeRightThreeButtonText">    3   </string>
+    <!--<string name="topLeftDownFourRightThreeButtonText">     3   </string>-->
     <string name="bottomLeftRightThreeButtonText">          ,   </string>
 
     <string name="topRightButtonText">           ←   </string>
     <string name="topRightDownOneButtonText">    /   </string>
     <string name="topRightDownTwoButtonText">    ×   </string>
     <string name="topRightDownThreeButtonText">  +   </string>
-    <string name="topRightDownFourButtonText">   -   </string>
-    <string name="bottomRightButtonText">        %   </string>
+    <!--<string name="topRightDownFourButtonText">   -   </string>-->
+    <string name="bottomRightButtonText">        -   </string>
 
     <!--Calculator Button Strings 2-->
     <!--<string name="topLeftButtonText">           2ⁿᵈ  </string>-->

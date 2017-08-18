@@ -24,32 +24,27 @@
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
                         android:id="@+id/topLeftButton"
-                        android:text="@string/topLeftButtonText"
-                        android:background="@color/niceLightGreen"/>
+                        android:text="@string/topLeftButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
                         android:id="@+id/topLeftRightOneButton"
-                        android:text="@string/topLeftRightOneButtonText"
-                        android:background="@color/niceLightGreen"/>
+                        android:text="@string/topLeftRightOneButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
                         android:id="@+id/topLeftRightTwoButton"
-                        android:text="@string/topLeftRightTwoButtonText"
-                        android:background="@color/niceLightGreen"/>
+                        android:text="@string/topLeftRightTwoButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
                         android:id="@+id/topLeftRightThreeButton"
-                        android:text="@string/topLeftRightThreeButtonText"
-                        android:background="@color/niceLightGreen"/>
+                        android:text="@string/topLeftRightThreeButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
-                    <Button style="@style/KeypadButtonStyle"
+                    <Button style="@style/KeypadButtonRightEdgeStyle"
                         android:id="@+id/topRightButton"
-                        android:text="@string/topRightButtonText"
-                        android:background="@color/niceRegularGreen"/>
+                        android:text="@string/topRightButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/KeypadRightStyle"/>
             </LinearLayout>
@@ -66,36 +61,31 @@
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
                         android:id="@+id/topLeftDownOneButton"
-                        android:text="@string/topLeftDownOneButtonText"
-                        android:background="@color/niceLightGreen"/>
+                        android:text="@string/topLeftDownOneButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout
                     style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
                         android:id="@+id/topLeftDownOneRightOneButton"
-                        android:text="@string/topLeftDownOneRightOneButtonText"
-                        android:background="@color/niceLightGreen"/>
+                        android:text="@string/topLeftDownOneRightOneButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout
                     style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
                         android:id="@+id/topLeftDownOneRightTwoButton"
-                        android:text="@string/topLeftDownOneRightTwoButtonText"
-                        android:background="@color/niceLightGreen"/>
+                        android:text="@string/topLeftDownOneRightTwoButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout
                     style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
                         android:id="@+id/topLeftDownOneRightThreeButton"
-                        android:text="@string/topLeftDownOneRightThreeButtonText"
-                        android:background="@color/niceLightGreen"/>
+                        android:text="@string/topLeftDownOneRightThreeButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout
                     style="@style/HorizontalButtonLayout">
-                    <Button style="@style/KeypadButtonStyle"
+                    <Button style="@style/KeypadButtonRightEdgeStyle"
                         android:id="@+id/topRightDownOneButton"
-                        android:text="@string/topRightDownOneButtonText"
-                        android:background="@color/niceRegularGreen"/>
+                        android:text="@string/topRightDownOneButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/KeypadRightStyle"/>
 
@@ -112,32 +102,27 @@
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
                         android:id="@+id/topLeftDownTwoButton"
-                        android:text="@string/topLeftDownTwoButtonText"
-                        android:background="@color/niceLightGreen"/>
+                        android:text="@string/topLeftDownTwoButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
                         android:id="@+id/topLeftDownTwoRightOneButton"
-                        android:text="@string/topLeftDownTwoRightOneButtonText"
-                        android:background="@color/niceLightGreen"/>
+                        android:text="@string/topLeftDownTwoRightOneButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
                         android:id="@+id/topLeftDownTwoRightTwoButton"
-                        android:text="@string/topLeftDownTwoRightTwoButtonText"
-                        android:background="@color/niceLightGreen"/>
+                        android:text="@string/topLeftDownTwoRightTwoButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
                         android:id="@+id/topLeftDownTwoRightThreeButton"
-                        android:text="@string/topLeftDownTwoRightThreeButtonText"
-                        android:background="@color/niceLightGreen"/>
+                        android:text="@string/topLeftDownTwoRightThreeButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
-                    <Button style="@style/KeypadButtonStyle"
+                    <Button style="@style/KeypadButtonRightEdgeStyle"
                         android:id="@+id/topRightDownTwoButton"
-                        android:text="@string/topRightDownTwoButtonText"
-                        android:background="@color/niceRegularGreen"/>
+                        android:text="@string/topRightDownTwoButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/KeypadRightStyle"/>
 
@@ -154,79 +139,73 @@
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
                         android:id="@+id/topLeftDownThreeButton"
-                        android:text="@string/topLeftDownThreeButtonText"
-                        android:background="@color/niceLightGreen"/>
+                        android:text="@string/topLeftDownThreeButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
                         android:id="@+id/topLeftDownThreeRightOneButton"
-                        android:text="@string/topLeftDownThreeRightOneButtonText"
-                        android:background="@color/niceLightGreen"/>
+                        android:text="@string/topLeftDownThreeRightOneButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
                         android:id="@+id/topLeftDownThreeRightTwoButton"
-                        android:text="@string/topLeftDownThreeRightTwoButtonText"
-                        android:background="@color/niceLightGreen"/>
+                        android:text="@string/topLeftDownThreeRightTwoButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
                         android:id="@+id/topLeftDownThreeRightThreeButton"
-                        android:text="@string/topLeftDownThreeRightThreeButtonText"
-                        android:background="@color/niceLightGreen"/>
+                        android:text="@string/topLeftDownThreeRightThreeButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
-                    <Button style="@style/KeypadButtonStyle"
+                    <Button style="@style/KeypadButtonRightEdgeStyle"
                         android:id="@+id/topRightDownThreeButton"
-                        android:text="@string/topRightDownThreeButtonText"
-                        android:background="@color/niceRegularGreen"/>
+                        android:text="@string/topRightDownThreeButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/KeypadRightStyle"/>
 
             </LinearLayout>
         </RelativeLayout>
-        <RelativeLayout style="@style/VerticalButtonLayout">
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/nicePeach">
+        <!--<RelativeLayout style="@style/VerticalButtonLayout">-->
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/nicePeach">-->
 
-                <RelativeLayout style="@style/KeypadLeftStyle"/>
-                <RelativeLayout style="@style/HorizontalButtonLayout">
-                    <Button style="@style/KeypadButtonStyle"
-                        android:id="@+id/topLeftDownFourButton"
-                        android:text="@string/topLeftDownFourButtonText"
-                        android:background="@color/niceLightGreen"/>
-                </RelativeLayout>
-                <RelativeLayout style="@style/HorizontalButtonLayout">
-                    <Button style="@style/KeypadButtonStyle"
-                        android:id="@+id/topLeftDownFourRightOneButton"
-                        android:text="@string/topLeftDownFourRightOneButtonText"
-                        android:background="@color/niceLightGreen"/>
-                </RelativeLayout>
-                <RelativeLayout style="@style/HorizontalButtonLayout">
-                    <Button style="@style/KeypadButtonStyle"
-                        android:id="@+id/topLeftDownFourRightTwoButton"
-                        android:text="@string/topLeftDownFourRightTwoButtonText"
-                        android:background="@color/niceLightGreen"/>
-                </RelativeLayout>
-                <RelativeLayout style="@style/HorizontalButtonLayout">
-                    <Button style="@style/KeypadButtonStyle"
-                        android:id="@+id/topLeftDownFourRightThreeButton"
-                        android:text="@string/topLeftDownFourRightThreeButtonText"
-                        android:background="@color/niceLightGreen"/>
-                </RelativeLayout>
-                <RelativeLayout style="@style/HorizontalButtonLayout">
-                    <Button style="@style/KeypadButtonStyle"
-                        android:id="@+id/topRightDownFourButton"
-                        android:text="@string/topRightDownFourButtonText"
-                        android:background="@color/niceRegularGreen"/>
-                </RelativeLayout>
-                <RelativeLayout style="@style/KeypadRightStyle"/>
+                <!--<RelativeLayout style="@style/KeypadLeftStyle"/>-->
+                <!--<RelativeLayout style="@style/HorizontalButtonLayout">-->
+                    <!--<Button style="@style/KeypadButtonStyle"-->
+                        <!--android:id="@+id/topLeftDownFourButton"-->
+                        <!--android:text="@string/topLeftDownFourButtonText"-->
+                        <!--/>-->
+                <!--</RelativeLayout>-->
+                <!--<RelativeLayout style="@style/HorizontalButtonLayout">-->
+                    <!--<Button style="@style/KeypadButtonStyle"-->
+                        <!--android:id="@+id/topLeftDownFourRightOneButton"-->
+                        <!--android:text="@string/topLeftDownFourRightOneButtonText"-->
+                        <!--/>-->
+                <!--</RelativeLayout>-->
+                <!--<RelativeLayout style="@style/HorizontalButtonLayout">-->
+                    <!--<Button style="@style/KeypadButtonStyle"-->
+                        <!--android:id="@+id/topLeftDownFourRightTwoButton"-->
+                        <!--android:text="@string/topLeftDownFourRightTwoButtonText"-->
+                        <!--/>-->
+                <!--</RelativeLayout>-->
+                <!--<RelativeLayout style="@style/HorizontalButtonLayout">-->
+                    <!--<Button style="@style/KeypadButtonStyle"-->
+                        <!--android:id="@+id/topLeftDownFourRightThreeButton"-->
+                        <!--android:text="@string/topLeftDownFourRightThreeButtonText"-->
+                        <!--/>-->
+                <!--</RelativeLayout>-->
+                <!--<RelativeLayout style="@style/HorizontalButtonLayout">-->
+                    <!--<Button style="@style/KeypadButtonRightEdgeStyle"-->
+                        <!--android:id="@+id/topRightDownFourButton"-->
+                        <!--android:text="@string/topRightDownFourButtonText"-->-->
+                <!--</RelativeLayout>-->
+                <!--<RelativeLayout style="@style/KeypadRightStyle"/>-->
 
-            </LinearLayout>
-        </RelativeLayout>
+            <!--</LinearLayout>-->
+        <!--</RelativeLayout>-->
         <RelativeLayout style="@style/VerticalButtonLayout">
             <LinearLayout
                 android:orientation="horizontal"
@@ -238,32 +217,27 @@
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
                         android:id="@+id/bottomLeftButton"
-                        android:text="@string/bottomLeftButtonText"
-                        android:background="@color/niceLightGreen"/>
+                        android:text="@string/bottomLeftButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
                         android:id="@+id/bottomLeftRightOneButton"
-                        android:text="@string/bottomLeftRightOneButtonText"
-                        android:background="@color/niceLightGreen"/>
+                        android:text="@string/bottomLeftRightOneButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
                         android:id="@+id/bottomLeftRightTwoButton"
-                        android:text="@string/bottomLeftRightTwoButtonText"
-                        android:background="@color/niceLightGreen"/>
+                        android:text="@string/bottomLeftRightTwoButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
                         android:id="@+id/bottomLeftRightThreeButton"
-                        android:text="@string/bottomLeftRightThreeButtonText"
-                        android:background="@color/niceLightGreen"/>
+                        android:text="@string/bottomLeftRightThreeButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
-                    <Button style="@style/KeypadButtonStyle"
+                    <Button style="@style/KeypadButtonRightEdgeStyle"
                         android:id="@+id/bottomRightButton"
-                        android:text="@string/bottomRightButtonText"
-                        android:background="@color/niceRegularGreen"/>
+                        android:text="@string/bottomRightButtonText"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/KeypadRightStyle"/>
 
