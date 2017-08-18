@@ -57,35 +57,35 @@ public class MainActivity extends AppCompatActivity {
                 binding.calculator.keypad.topLeftDownOneButton,
                 binding.calculator.keypad.topLeftDownTwoButton,
                 binding.calculator.keypad.topLeftDownThreeButton,
-                binding.calculator.keypad.topLeftDownFourButton,
+//                binding.calculator.keypad.topLeftDownFourButton,
                 binding.calculator.keypad.bottomLeftButton,
 
                 binding.calculator.keypad.topLeftRightOneButton,
                 binding.calculator.keypad.topLeftDownOneRightOneButton,
                 binding.calculator.keypad.topLeftDownTwoRightOneButton,
                 binding.calculator.keypad.topLeftDownThreeRightOneButton,
-                binding.calculator.keypad.topLeftDownFourRightOneButton,
+//                binding.calculator.keypad.topLeftDownFourRightOneButton,
                 binding.calculator.keypad.bottomLeftRightOneButton,
 
                 binding.calculator.keypad.topLeftRightTwoButton,
                 binding.calculator.keypad.topLeftDownOneRightTwoButton,
                 binding.calculator.keypad.topLeftDownTwoRightTwoButton,
                 binding.calculator.keypad.topLeftDownThreeRightTwoButton,
-                binding.calculator.keypad.topLeftDownFourRightTwoButton,
+//                binding.calculator.keypad.topLeftDownFourRightTwoButton,
                 binding.calculator.keypad.bottomLeftRightTwoButton,
 
                 binding.calculator.keypad.topLeftRightThreeButton,
                 binding.calculator.keypad.topLeftDownOneRightThreeButton,
                 binding.calculator.keypad.topLeftDownTwoRightThreeButton,
                 binding.calculator.keypad.topLeftDownThreeRightThreeButton,
-                binding.calculator.keypad.topLeftDownFourRightThreeButton,
+//                binding.calculator.keypad.topLeftDownFourRightThreeButton,
                 binding.calculator.keypad.bottomLeftRightThreeButton,
 
                 binding.calculator.keypad.topRightButton,
                 binding.calculator.keypad.topRightDownOneButton,
                 binding.calculator.keypad.topRightDownTwoButton,
                 binding.calculator.keypad.topRightDownThreeButton,
-                binding.calculator.keypad.topRightDownFourButton,
+//                binding.calculator.keypad.topRightDownFourButton,
                 binding.calculator.keypad.bottomRightButton
         };
 
@@ -97,6 +97,22 @@ public class MainActivity extends AppCompatActivity {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 String inputText = binding.calculator.inputText.getText().toString();
                 if (inputText.length() > 0) {
+                    int caret = binding.calculator.inputText.getSelectionEnd();
+                    for (int a = 0; a<replaceable.length;){
+                        int index = inputText.indexOf(replaceable[a]);
+                        if (index != -1){
+                            inputText = inputText.substring(0, index)+replaceWith[a]+inputText.substring(index+replaceable[a].length());
+                            caret = index+replaceWith[a].length();
+                        }
+                        else{
+                            a++;
+                        }
+                    }
+                    if (!inputText.equals(binding.calculator.inputText.getText().toString().trim())){
+                        binding.calculator.inputText.setText(inputText);
+                        binding.calculator.inputText.setSelection(caret);
+                    }
+
                     String output = Engine.evaluateDF(inputText);
                     if (output.equals("= NaN")) {
                         binding.calculator.outputText.setTextColor(Color.LTGRAY);
@@ -164,6 +180,9 @@ public class MainActivity extends AppCompatActivity {
     public static final int equalsNaNColor = Color.LTGRAY;
     public static final int validColor = Color.BLACK;
 
+    public static final String[] replaceable = {"*", "××"};
+    public static final String[] replaceWith = {"×", "^"};
+
     protected void addToInput(String text){
         int caret = binding.calculator.inputText.getSelectionEnd();
         String oldInputText = binding.calculator.inputText.getText().toString();
@@ -171,7 +190,23 @@ public class MainActivity extends AppCompatActivity {
 
         if (newInputText.length() > 0) {
             binding.calculator.inputText.setText(newInputText);
-            binding.calculator.inputText.setSelection(caret + text.length());
+            caret += text.length();
+            binding.calculator.inputText.setSelection(caret);
+
+            for (int a = 0; a<replaceable.length;){
+                int index = newInputText.indexOf(replaceable[a]);
+                if (index != -1){
+                    newInputText = newInputText.substring(0, index)+replaceWith[a]+newInputText.substring(index+replaceable[a].length());
+                    caret = index+replaceWith[a].length();
+                }
+                else{
+                    a++;
+                }
+            }
+            if (!newInputText.equals(binding.calculator.inputText.getText().toString().trim())){
+                binding.calculator.inputText.setText(newInputText);
+                binding.calculator.inputText.setSelection(caret);
+            }
 
             String output = Engine.evaluateDF(newInputText);
             if (output.equals(equalsNaN)) {
