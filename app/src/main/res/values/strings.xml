@@ -74,4 +74,26 @@
     <!--<string name="topRightDownTwoButtonText">   -   </string>-->
     <!--<string name="topRightDownThreeButtonText"> )   </string>-->
     <!--<string name="bottomRightButtonText">       ]   </string>-->
+
+    <!--Trig Buttons-->
+    <string name="button00trig"> sin    </string>
+    <string name="button01trig"> cos    </string>
+    <string name="button02trig"> tan    </string>
+    <string name="button03trig"> ←      </string>
+    <string name="button10trig"> arcsin </string>
+    <string name="button11trig"> arccos </string>
+    <string name="button12trig"> arctan </string>
+    <string name="button13trig"> /      </string>
+    <string name="button20trig"> csc    </string>
+    <string name="button21trig"> sec    </string>
+    <string name="button22trig"> cot    </string>
+    <string name="button23trig"> ×      </string>
+    <string name="button30trig"> arccsc </string>
+    <string name="button31trig"> arcsec </string>
+    <string name="button32trig"> arccot </string>
+    <string name="button33trig"> +      </string>
+    <string name="button40trig"> π      </string>
+    <string name="button41trig"> Deg    </string>
+    <string name="button42trig"> Rad    </string>
+    <string name="button43trig"> -      </string>
 </resources>

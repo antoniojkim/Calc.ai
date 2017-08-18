@@ -50,6 +50,7 @@
             </LinearLayout>
 
         </RelativeLayout>
+
         <RelativeLayout style="@style/VerticalButtonLayout">
             <LinearLayout
                 android:orientation="horizontal"

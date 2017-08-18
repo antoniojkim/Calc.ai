@@ -6,7 +6,7 @@ android {
     buildToolsVersion "25.0.2"
     dataBinding.enabled = true
     defaultConfig {
-        applicationId "com.example.antoniok.CalcAI"
+        applicationId "com.example.prathamdesai.Calc.AI"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
