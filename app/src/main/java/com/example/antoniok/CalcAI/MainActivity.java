@@ -33,9 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private MyGestureHandler handler;
     private LayoutInflater inflater;
 
-    private Intent intent;
-
-    public static final String PUBLIC_KEY = "com.example.prathamdesai.calculatortest.MESSAGE";
+    public static final String PUBLIC_KEY = "com.example.prathamdesai.calc.AI.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         detector = new GestureDetectorCompat(this, handler);
 
         buttons = new Button[]{
+
                 binding.calculator.keypad.topLeftButton,
                 binding.calculator.keypad.topLeftDownOneButton,
                 binding.calculator.keypad.topLeftDownTwoButton,
@@ -138,11 +137,16 @@ public class MainActivity extends AppCompatActivity {
 
         int num = getActivityNum();
         Intent intent;
-
-        if (num == 1)
-            intent = new Intent(this, DerivLimPage.class);
-        else
+        if (num == 1) {
+            intent = new Intent(this, TrigPage.class);
+            /*EditText output = (EditText) binding.calculator.outputText;
+            String output_text = output.getText().toString();
+            TextView input = (TextView) binding.calculator.inputText;
+            String input_text = input.getText().toString();
+            intent.putExtra(PUBLIC_KEY, new String[]{input_text, output_text});*/
+        } else{
             intent = null;
+        }
 
         startActivity(intent);
 
@@ -305,9 +309,9 @@ public class MainActivity extends AppCompatActivity {
 
                 swipe_message = "Trigonometric";
 
-                //setActivityNum(1);
+                setActivityNum(1);
 
-                //startAnActivity();
+                startAnActivity();
 
                 //View page = inflater.inflate(R.layout.page, null);
 
@@ -328,9 +332,9 @@ public class MainActivity extends AppCompatActivity {
 
                 swipe_message = "Differential";
 
-                setActivityNum(1);
+                //setActivityNum(1);
 
-                startAnActivity();
+                //startAnActivity();
                 //View page = inflater.inflate(R.layout.another_another_page, null);
 
                 //setContentView(page);

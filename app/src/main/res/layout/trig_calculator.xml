@@ -2,17 +2,13 @@
 <layout>
     <data>
         <variable
-            name="Calculator"
-            type="com.example.antoniok.CalcAI.MainActivity"/>
+            name="TrigonometricCalculator"
+            type="com.example.antoniok.CalcAI.TrigPage" />
+
     </data>
-
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        tools:context="com.kim.antonio.calc_ai.DerivLimPage"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
+        android:orientation="vertical" android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <EditText
             android:id="@+id/inputText"
             android:layout_width="match_parent"
@@ -53,8 +49,8 @@
             android:background="@android:color/darker_gray"
             />
 
-        <include layout="@layout/keypad"
-            android:id="@+id/keypad"
+        <include layout="@layout/trig_keypad"
+            android:id="@+id/trig_keypad"
             />
 
     </LinearLayout>
