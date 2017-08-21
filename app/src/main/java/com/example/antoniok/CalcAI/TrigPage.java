@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
+import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -163,20 +164,52 @@ public class TrigPage extends AppCompatActivity {
             Log.d(tag, "Fling" + "[" + e1.getX() + "," + e1.getY() + "]" + "[" + e2.getX() + "," + e2.getY() + "]");
 
             String swipe_message = "";
+            int[] rowOne = new int[2];
+            int[] rowTwo = new int[2];
+            int[] rowThree = new int[2];
+            int[] rowFour = new int[2];
+            int[] rowFive = new int[2];
 
-            if (e1.getY() > 605 && e2.getY() <= 825) {
+            View layout = findViewById(R.id.trig_calculator);
+            View keypad = layout.findViewById(R.id.trig_keypad);
+
+            View rowOneButton = keypad.findViewById(R.id.zero_zero_trig);
+            View rowTwoButton = keypad.findViewById(R.id.one_zero_trig);
+            View rowThreeButton = keypad.findViewById(R.id.two_zero_trig);
+            View rowFourButton = keypad.findViewById(R.id.three_zero_trig);
+            View rowFiveButton = keypad.findViewById(R.id.four_zero_trig);
+
+            // row one button position
+            rowOneButton.getLocationInWindow(rowOne);
+            int y1 = rowOne[1];
+
+            // row two button position
+            rowTwoButton.getLocationInWindow(rowTwo);
+            int y2 = rowTwo[1];
+
+            // row three button position
+            rowThreeButton.getLocationInWindow(rowThree);
+            int y3 = rowThree[1];
+
+            // row four button positiin
+            rowFourButton.getLocationInWindow(rowFour);
+            int y4 = rowFour[1];
+
+            // row five button position
+            rowFiveButton.getLocationInWindow(rowFive);
+            int y5 = rowFive[1];
+
+            if (e1.getY() >= y1 && e2.getY() < y2) {
 
                 swipe_message = "Trigonometric";
 
                 setActivityNum(1);
 
-                //startAnActivity();
-
                 //View page = inflater.inflate(R.layout.page, null);
 
                 //setContentView(page);
 
-            } else if (e1.getY() > 825 && e2.getY() <= 1045) {
+            } else if (e1.getY() >= y2 && e2.getY() < y3) {
 
                 swipe_message = "Logarithmic";
 
@@ -187,33 +220,26 @@ public class TrigPage extends AppCompatActivity {
 
                 //setContentView(page);
 
-            } else if (e1.getY() > 1045 && e2.getY() <= 1265) {
+            } else if (e1.getY() >= y3 && e2.getY() < y4) {
 
-                swipe_message = "Differential";
+                swipe_message = "Misc";
 
-                //setActivityNum(3);
+                //setActivityNum(1);
 
                 //startAnActivity();
                 //View page = inflater.inflate(R.layout.another_another_page, null);
 
                 //setContentView(page);
 
-            }else if (e1.getY() > 1265 && e2.getY() <= 1485){
+            }else if (e1.getY() >= y4 && e2.getY() < y5){
 
-                swipe_message = "Numbers";
-
-            }else if (e1.getY() > 1485 && e2.getY() <= 1705){
-
-                swipe_message = "Integration";
-
-            }else if (e1.getY() > 1705 && e2.getY() <= 1920){
-
+                swipe_message = "Number theory";
+            }else{
                 swipe_message = "Main";
 
                 setActivityNum(0);
 
                 startAnActivity();
-
             }
 
 
