@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="LogarithmicKeypad"
+            type="com.example.antoniok.CalcAI.databinding.LogKeypadBinding"/>
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout style="@style/VerticalButtonLayout">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/niceBlue">
+
+            <RelativeLayout style="@style/KeypadLeftStyle"/>
+            <RelativeLayout style="@style/HorizontalButtonLayout">
+                <Button style="@style/KeypadButtonStyle"
+                    android:id="@+id/zeroZeroLog"
+                    android:text="@string/button00log"/>
+            </RelativeLayout>
+            <RelativeLayout style="@style/HorizontalButtonLayout">
+                <Button style="@style/KeypadButtonStyle"
+                    android:id="@+id/zeroOneLog"
+                    android:text="@string/button01log"/>
+            </RelativeLayout>
+            <RelativeLayout style="@style/HorizontalButtonLayout">
+                <Button style="@style/KeypadButtonStyle"
+                    android:id="@+id/zeroTwoLog"
+                    android:text="@string/button02log"/>
+            </RelativeLayout>
+            <RelativeLayout style="@style/HorizontalButtonLayout">
+                <Button style="@style/KeypadButtonRightEdgeStyle"
+                    android:id="@+id/zeroThreeLog"
+                    android:text="@string/button03log"/>
+            </RelativeLayout>
+            <RelativeLayout style="@style/KeypadRightStyle"/>
+        </LinearLayout>
+    </RelativeLayout>
+        <RelativeLayout style="@style/VerticalButtonLayout">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/niceLightPink">
+
+                <RelativeLayout style="@style/KeypadLeftStyle"/>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/oneZeroLog"
+                        android:text="@string/button10log"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/oneOneLog"
+                        android:text="@string/button11log"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/oneTwoLog"
+                        android:text="@string/button12log"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonRightEdgeStyle"
+                        android:id="@+id/oneThreeLog"
+                        android:text="@string/button13log"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/KeypadRightStyle"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout style="@style/VerticalButtonLayout">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/niceLightYellow">
+
+                <RelativeLayout style="@style/KeypadLeftStyle"/>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/twoZeroLog"
+                        android:text="@string/button20log"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/twoOneLog"
+                        android:text="@string/button21log"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/twoTwoLog"
+                        android:text="@string/button22log"/>
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonRightEdgeStyle"
+                        android:id="@+id/twoThreeLog"
+                        android:text="@string/button23log"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/KeypadRightStyle"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout style="@style/VerticalButtonLayout">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/niceLightBluey">
+
+                <RelativeLayout style="@style/KeypadLeftStyle"/>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/threeZeroLog"
+                        android:text="@string/button30log"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/threeOneLog"
+                        android:text="@string/button31log"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/threeTwoLog"
+                        android:text="@string/button32log"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonRightEdgeStyle"
+                        android:id="@+id/threeThreeLog"
+                        android:text="@string/button33log"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/KeypadRightStyle"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/VerticalButtonLayout">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/niceGrapePurple">
+
+                <RelativeLayout style="@style/KeypadLeftStyle"/>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/fourZeroLog"
+                        android:text="@string/button40log"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/fourOneLog"
+                        android:text="@string/button41log"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/fourTwoLog"
+                        android:text="@string/button42log"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonRightEdgeStyle"
+                        android:id="@+id/fourThreeLog"
+                        android:text="@string/button43log"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/KeypadRightStyle"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="NumTheoryonometricKeypad"
+            type="com.example.antoniok.CalcAI.databinding.NumTheoryKeypadBinding"/>
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout style="@style/VerticalButtonLayout">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/niceBlue">
+
+            <RelativeLayout style="@style/KeypadLeftStyle"/>
+            <RelativeLayout style="@style/HorizontalButtonLayout">
+                <Button style="@style/KeypadButtonStyle"
+                    android:id="@+id/zeroZeroNumTheory"
+                    android:text="@string/button00NumTheory"/>
+            </RelativeLayout>
+            <RelativeLayout style="@style/HorizontalButtonLayout">
+                <Button style="@style/KeypadButtonStyle"
+                    android:id="@+id/zeroOneNumTheory"
+                    android:text="@string/button01NumTheory"/>
+            </RelativeLayout>
+            <RelativeLayout style="@style/HorizontalButtonLayout">
+                <Button style="@style/KeypadButtonStyle"
+                    android:id="@+id/zeroTwoNumTheory"
+                    android:text="@string/button02NumTheory"/>
+            </RelativeLayout>
+            <RelativeLayout style="@style/HorizontalButtonLayout">
+                <Button style="@style/KeypadButtonRightEdgeStyle"
+                    android:id="@+id/zeroThreeNumTheory"
+                    android:text="@string/button03NumTheory"/>
+            </RelativeLayout>
+            <RelativeLayout style="@style/KeypadRightStyle"/>
+        </LinearLayout>
+    </RelativeLayout>
+        <RelativeLayout style="@style/VerticalButtonLayout">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/niceLightPink">
+
+                <RelativeLayout style="@style/KeypadLeftStyle"/>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/oneZeroNumTheory"
+                        android:text="@string/button10NumTheory"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/oneOneNumTheory"
+                        android:text="@string/button11NumTheory"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/oneTwoNumTheory"
+                        android:text="@string/button12NumTheory"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonRightEdgeStyle"
+                        android:id="@+id/oneThreeNumTheory"
+                        android:text="@string/button13NumTheory"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/KeypadRightStyle"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout style="@style/VerticalButtonLayout">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/niceLightYellow">
+
+                <RelativeLayout style="@style/KeypadLeftStyle"/>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/twoZeroNumTheory"
+                        android:text="@string/button20NumTheory"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/twoOneNumTheory"
+                        android:text="@string/button21NumTheory"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/twoTwoNumTheory"
+                        android:text="@string/button22NumTheory"/>
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonRightEdgeStyle"
+                        android:id="@+id/twoThreeNumTheory"
+                        android:text="@string/button23NumTheory"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/KeypadRightStyle"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout style="@style/VerticalButtonLayout">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/niceLightBluey">
+
+                <RelativeLayout style="@style/KeypadLeftStyle"/>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/threeZeroNumTheory"
+                        android:text="@string/button30NumTheory"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/threeOneNumTheory"
+                        android:text="@string/button31NumTheory"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/threeTwoNumTheory"
+                        android:text="@string/button32NumTheory"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonRightEdgeStyle"
+                        android:id="@+id/threeThreeNumTheory"
+                        android:text="@string/button33NumTheory"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/KeypadRightStyle"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/VerticalButtonLayout">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/niceGrapePurple">
+
+                <RelativeLayout style="@style/KeypadLeftStyle"/>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/fourZeroNumTheory"
+                        android:text="@string/button40NumTheory"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/fourOneNumTheory"
+                        android:text="@string/button41NumTheory"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonStyle"
+                        android:id="@+id/fourTwoNumTheory"
+                        android:text="@string/button42NumTheory"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/HorizontalButtonLayout">
+                    <Button style="@style/KeypadButtonRightEdgeStyle"
+                        android:id="@+id/fourThreeNumTheory"
+                        android:text="@string/button43NumTheory"/>
+                </RelativeLayout>
+                <RelativeLayout style="@style/KeypadRightStyle"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

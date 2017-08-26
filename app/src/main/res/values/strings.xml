@@ -13,35 +13,30 @@
     <string name="topLeftDownOneButtonText">    √   </string>
     <string name="topLeftDownTwoButtonText">    π   </string>
     <string name="topLeftDownThreeButtonText">  e   </string>
-    <!--<string name="topLeftDownFourButtonText">   nCr </string>-->
     <string name="bottomLeftButtonText">        x   </string>
 
     <string name="topLeftRightOneButtonText">           ]   </string>
     <string name="topLeftDownOneRightOneButtonText">    7   </string>
     <string name="topLeftDownTwoRightOneButtonText">    4   </string>
     <string name="topLeftDownThreeRightOneButtonText">  1   </string>
-    <!--<string name="topLeftDownFourRightOneButtonText">   1   </string>-->
-    <string name="bottomLeftRightOneButtonText">        .   </string>
+    <string name="bottomLeftRightOneButtonText">        ,   </string>
 
     <string name="topLeftRightTwoButtonText">           (   </string>
     <string name="topLeftDownOneRightTwoButtonText">    8   </string>
     <string name="topLeftDownTwoRightTwoButtonText">    5   </string>
     <string name="topLeftDownThreeRightTwoButtonText">  2   </string>
-    <!--<string name="topLeftDownFourRightTwoButtonText">   2   </string>-->
     <string name="bottomLeftRightTwoButtonText">        0   </string>
 
     <string name="topLeftRightThreeButtonText">             )   </string>
     <string name="topLeftDownOneRightThreeButtonText">      9   </string>
     <string name="topLeftDownTwoRightThreeButtonText">      6   </string>
     <string name="topLeftDownThreeRightThreeButtonText">    3   </string>
-    <!--<string name="topLeftDownFourRightThreeButtonText">     3   </string>-->
-    <string name="bottomLeftRightThreeButtonText">          ,   </string>
+    <string name="bottomLeftRightThreeButtonText">          .   </string>
 
     <string name="topRightButtonText">           ←   </string>
     <string name="topRightDownOneButtonText">    /   </string>
     <string name="topRightDownTwoButtonText">    ×   </string>
     <string name="topRightDownThreeButtonText">  +   </string>
-    <!--<string name="topRightDownFourButtonText">   -   </string>-->
     <string name="bottomRightButtonText">        -   </string>
 
     <!--Calculator Button Strings 2-->
@@ -76,24 +71,79 @@
     <!--<string name="bottomRightButtonText">       ]   </string>-->
 
     <!--Trig Buttons-->
-    <string name="button00trig"> sin    </string>
-    <string name="button01trig"> cos    </string>
-    <string name="button02trig"> tan    </string>
-    <string name="button03trig"> ←      </string>
-    <string name="button10trig"> arcsin </string>
-    <string name="button11trig"> arccos </string>
-    <string name="button12trig"> arctan </string>
-    <string name="button13trig"> /      </string>
+    <string name="button00trig"> π      </string>
+    <string name="button10trig"> sin    </string>
     <string name="button20trig"> csc    </string>
+    <string name="button30trig"> sin⁻¹   </string>
+    <string name="button40trig"> csc⁻¹   </string>
+
+    <string name="button01trig"> Deg    </string>
+    <string name="button11trig"> cos    </string>
     <string name="button21trig"> sec    </string>
+    <string name="button31trig"> cos⁻¹   </string>
+    <string name="button41trig"> sec⁻¹   </string>
+
+    <string name="button02trig"> Rad    </string>
+    <string name="button12trig"> tan    </string>
     <string name="button22trig"> cot    </string>
+    <string name="button32trig"> tan⁻¹   </string>
+    <string name="button42trig"> cot⁻¹   </string>
+
+    <string name="button03trig"> ←      </string>
+    <string name="button13trig"> /      </string>
     <string name="button23trig"> ×      </string>
-    <string name="button30trig"> arccsc </string>
-    <string name="button31trig"> arcsec </string>
-    <string name="button32trig"> arccot </string>
     <string name="button33trig"> +      </string>
-    <string name="button40trig"> π      </string>
-    <string name="button41trig"> Deg    </string>
-    <string name="button42trig"> Rad    </string>
     <string name="button43trig"> -      </string>
+
+
+    <!--Logarithm Buttons-->
+    <string name="button00log">  e       </string>
+    <string name="button10log">  sinh    </string>
+    <string name="button20log">  csch    </string>
+    <string name="button30log">  sinh⁻¹   </string>
+    <string name="button40log">  csch⁻¹   </string>
+
+    <string name="button01log">  ln      </string>
+    <string name="button11log">  cosh    </string>
+    <string name="button21log">  sech    </string>
+    <string name="button31log">  cosh⁻¹   </string>
+    <string name="button41log">  sech⁻¹   </string>
+
+    <string name="button02log">  log₁₀    </string>
+    <string name="button12log">  tanh    </string>
+    <string name="button22log">  coth    </string>
+    <string name="button32log">  tanh⁻¹   </string>
+    <string name="button42log">  coth⁻¹   </string>
+
+    <string name="button03log">  ←      </string>
+    <string name="button13log">  /       </string>
+    <string name="button23log">  ×      </string>
+    <string name="button33log">  +      </string>
+    <string name="button43log">  -      </string>
+
+
+    <!--Number Theory Buttons-->
+    <string name="button00NumTheory">  gcd     </string>
+    <string name="button10NumTheory">  max     </string>
+    <string name="button20NumTheory">  ceil    </string>
+    <string name="button30NumTheory">  EEA     </string>
+    <string name="button40NumTheory">  prime   </string>
+
+    <string name="button01NumTheory">  lcm     </string>
+    <string name="button11NumTheory">  min     </string>
+    <string name="button21NumTheory">  floor   </string>
+    <string name="button31NumTheory">  LDE     </string>
+    <string name="button41NumTheory">  primef  </string>
+
+    <string name="button02NumTheory">  mod    </string>
+    <string name="button12NumTheory">  %      </string>
+    <string name="button22NumTheory">  ≡      </string>
+    <string name="button32NumTheory">  abs    </string>
+    <string name="button42NumTheory">  cmplx  </string>
+
+    <string name="button03NumTheory">  ←     </string>
+    <string name="button13NumTheory">  /      </string>
+    <string name="button23NumTheory">  ×      </string>
+    <string name="button33NumTheory">  +      </string>
+    <string name="button43NumTheory">  -      </string>
 </resources>

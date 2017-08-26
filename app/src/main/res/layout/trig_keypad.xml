@@ -3,7 +3,7 @@
     <data>
         <variable
             name="TrigonometricKeypad"
-            type="com.example.antoniok.CalcAI.TrigPage"/>
+            type="com.example.antoniok.CalcAI.databinding.TrigKeypadBinding"/>
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -20,27 +20,23 @@
             <RelativeLayout style="@style/KeypadLeftStyle"/>
             <RelativeLayout style="@style/HorizontalButtonLayout">
                 <Button style="@style/KeypadButtonStyle"
-                    android:id="@+id/zero_zero_trig"
-                    android:text="@string/button00trig"
-                    android:background="@color/niceLightGreen"/>
+                    android:id="@+id/zeroZeroTrig"
+                    android:text="@string/button00trig"/>
             </RelativeLayout>
             <RelativeLayout style="@style/HorizontalButtonLayout">
                 <Button style="@style/KeypadButtonStyle"
-                    android:id="@+id/zero_one_trig"
-                    android:text="@string/button01trig"
-                    android:background="@color/niceLightGreen"/>
+                    android:id="@+id/zeroOneTrig"
+                    android:text="@string/button01trig"/>
             </RelativeLayout>
             <RelativeLayout style="@style/HorizontalButtonLayout">
                 <Button style="@style/KeypadButtonStyle"
-                    android:id="@+id/zero_two_trig"
-                    android:text="@string/button02trig"
-                    android:background="@color/niceLightGreen"/>
+                    android:id="@+id/zeroTwoTrig"
+                    android:text="@string/button02trig"/>
             </RelativeLayout>
             <RelativeLayout style="@style/HorizontalButtonLayout">
-                <Button style="@style/KeypadButtonStyle"
-                    android:id="@+id/zero_three_trig"
-                    android:text="@string/button03trig"
-                    android:background="@color/niceRegularGreen"/>
+                <Button style="@style/KeypadButtonRightEdgeStyle"
+                    android:id="@+id/zeroThreeTrig"
+                    android:text="@string/button03trig"/>
             </RelativeLayout>
             <RelativeLayout style="@style/KeypadRightStyle"/>
         </LinearLayout>
@@ -55,31 +51,27 @@
                 <RelativeLayout style="@style/KeypadLeftStyle"/>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
-                        android:id="@+id/one_zero_trig"
-                        android:text="@string/button10trig"
-                        android:background="@color/niceLightGreen"/>
+                        android:id="@+id/oneZeroTrig"
+                        android:text="@string/button10trig"/>
                 </RelativeLayout>
                 <RelativeLayout
                     style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
-                        android:id="@+id/one_one_trig"
-                        android:text="@string/button11trig"
-                        android:background="@color/niceLightGreen"/>
+                        android:id="@+id/oneOneTrig"
+                        android:text="@string/button11trig"/>
                 </RelativeLayout>
                 <RelativeLayout
                     style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
-                        android:id="@+id/one_two_trig"
-                        android:text="@string/button12trig"
-                        android:background="@color/niceLightGreen"/>
+                        android:id="@+id/oneTwoTrig"
+                        android:text="@string/button12trig"/>
                 </RelativeLayout>
 
                 <RelativeLayout
                     style="@style/HorizontalButtonLayout">
-                    <Button style="@style/KeypadButtonStyle"
-                        android:id="@+id/one_three_trig"
-                        android:text="@string/button13trig"
-                        android:background="@color/niceRegularGreen"/>
+                    <Button style="@style/KeypadButtonRightEdgeStyle"
+                        android:id="@+id/oneThreeTrig"
+                        android:text="@string/button13trig"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/KeypadRightStyle"/>
 
@@ -95,28 +87,24 @@
                 <RelativeLayout style="@style/KeypadLeftStyle"/>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
-                        android:id="@+id/two_zero_trig"
-                        android:text="@string/button20trig"
-                        android:background="@color/niceLightGreen"/>
+                        android:id="@+id/twoZeroTrig"
+                        android:text="@string/button20trig"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
-                        android:id="@+id/two_one_trig"
-                        android:text="@string/button21trig"
-                        android:background="@color/niceLightGreen"/>
+                        android:id="@+id/twoOneTrig"
+                        android:text="@string/button21trig"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
-                        android:id="@+id/two_two_trig"
-                        android:text="@string/button22trig"
-                        android:background="@color/niceLightGreen"/>
+                        android:id="@+id/twoTwoTrig"
+                        android:text="@string/button22trig"/>
                 </RelativeLayout>
 
                 <RelativeLayout style="@style/HorizontalButtonLayout">
-                    <Button style="@style/KeypadButtonStyle"
-                        android:id="@+id/two_three_trig"
-                        android:text="@string/button23trig"
-                        android:background="@color/niceRegularGreen"/>
+                    <Button style="@style/KeypadButtonRightEdgeStyle"
+                        android:id="@+id/twoThreeTrig"
+                        android:text="@string/button23trig"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/KeypadRightStyle"/>
 
@@ -132,27 +120,23 @@
                 <RelativeLayout style="@style/KeypadLeftStyle"/>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
-                        android:id="@+id/three_zero_trig"
-                        android:text="@string/button30trig"
-                        android:background="@color/niceLightGreen"/>
+                        android:id="@+id/threeZeroTrig"
+                        android:text="@string/button30trig"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
-                        android:id="@+id/three_one_trig"
-                        android:text="@string/button31trig"
-                        android:background="@color/niceLightGreen"/>
+                        android:id="@+id/threeOneTrig"
+                        android:text="@string/button31trig"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
-                        android:id="@+id/three_two_trig"
-                        android:text="@string/button32trig"
-                        android:background="@color/niceLightGreen"/>
+                        android:id="@+id/threeTwoTrig"
+                        android:text="@string/button32trig"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
-                    <Button style="@style/KeypadButtonStyle"
-                        android:id="@+id/three_three_trig"
-                        android:text="@string/button33trig"
-                        android:background="@color/niceRegularGreen"/>
+                    <Button style="@style/KeypadButtonRightEdgeStyle"
+                        android:id="@+id/threeThreeTrig"
+                        android:text="@string/button33trig"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/KeypadRightStyle"/>
 
@@ -169,27 +153,23 @@
                 <RelativeLayout style="@style/KeypadLeftStyle"/>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
-                        android:id="@+id/four_zero_trig"
-                        android:text="@string/button40trig"
-                        android:background="@color/niceLightGreen"/>
+                        android:id="@+id/fourZeroTrig"
+                        android:text="@string/button40trig"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
-                        android:id="@+id/four_one_trig"
-                        android:text="@string/button41trig"
-                        android:background="@color/niceLightGreen"/>
+                        android:id="@+id/fourOneTrig"
+                        android:text="@string/button41trig"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
                     <Button style="@style/KeypadButtonStyle"
-                        android:id="@+id/four_two_trig"
-                        android:text="@string/button42trig"
-                        android:background="@color/niceLightGreen"/>
+                        android:id="@+id/fourTwoTrig"
+                        android:text="@string/button42trig"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/HorizontalButtonLayout">
-                    <Button style="@style/KeypadButtonStyle"
-                        android:id="@+id/four_three_trig"
-                        android:text="@string/button43trig"
-                        android:background="@color/niceRegularGreen"/>
+                    <Button style="@style/KeypadButtonRightEdgeStyle"
+                        android:id="@+id/fourThreeTrig"
+                        android:text="@string/button43trig"/>
                 </RelativeLayout>
                 <RelativeLayout style="@style/KeypadRightStyle"/>
 

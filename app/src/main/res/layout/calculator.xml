@@ -3,7 +3,7 @@
     <data>
         <variable
             name="Calculator"
-            type="com.example.antoniok.CalcAI.MainActivity"/>
+            type="com.example.antoniok.CalcAI.databinding.CalculatorBinding"/>
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -53,9 +53,20 @@
             android:background="@android:color/darker_gray"
             />
 
-        <include layout="@layout/keypad"
-            android:id="@+id/keypad"
-            />
+        <!--<include layout="@layout/keypadFragment"-->
+            <!--android:id="@+id/keypadFragment"-->
+            <!--/>-->
+
+        <!--<fragment android:name="com.example.antoniok.CalcAI.CalcInput.KeypadFragment"-->
+            <!--android:id="@+id/CalculatorInput"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+
+        <android.support.v4.view.ViewPager
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/CalcInputPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
 
     </LinearLayout>
